@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-        
+       
       int num;
       int d1, d2, d3, d4;
 
@@ -18,7 +18,7 @@ int main(){
      
 
      // Using While loop to Reverse Bigger Numbers
-     
+
      /*
      int num, revr = 0;
 
@@ -26,12 +26,12 @@ int main(){
     scanf("%d", &num);
 
     while (num != 0) {
-        revr = revr * 10 + num % 10;  
-        num = num / 10;      
+        rev = rev * 10 + num % 10;  
+        num = num / 10;             
     }
 
     printf("Reversed number: %d\n", revr);
-    */
+    
 
     return 0;
 }
@@ -39,4 +39,14 @@ int main(){
 Challenge 12: Four-digit whole number in reverse order
 Write a C program to display a four-digit integer in reverse order without using a loop.
  For example, if the integer is 1234, its inverse is 4321.
+*/
+
+/* int num, revr = 0;
+    while (num != 0) {
+        rev = rev * 10 + num % 10;  
+        num = num / 10;             
+    } 
+    if num = 123 . ==> num != 0 . 
+    the loop starts . rev(0)= rev(0) * 10 {0} + num(123) % 10 = 3 .. num = num(123) / 10 .
+    next loop . rev(3) * 10 {30} + num()
 */
