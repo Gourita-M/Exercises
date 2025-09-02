@@ -16,7 +16,8 @@ int main(){
 
      printf("Reversed number: %d%d%d%d\n", d4, d3, d2, d1);
      
-
+return 0;
+}
      // Using While loop to Reverse Bigger Numbers
 
      /*
@@ -33,8 +34,7 @@ int main(){
     printf("Reversed number: %d\n", revr);
     
 
-    return 0;
-}
+    
 /*
 Challenge 12: Four-digit whole number in reverse order
 Write a C program to display a four-digit integer in reverse order without using a loop.
