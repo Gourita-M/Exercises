@@ -5,16 +5,17 @@ int main(){
         int midchitory;
         int covtype;
 
-        prinf("Your Age");
+        printf("Your Age: ");
              scanf("%d",&age);
         printf("Your Medical History");
-        printf("0 for no problems, 1 for minor problems, 2 for major problems");
+        printf("\n0 for no problems, 1 for minor problems, 2 for major problems: ");
                scanf("%d",&midchitory);
-        printf
+        printf("Coverage type (1 for basic, 2 for extended): ");
+               scanf("%d",&covtype);
 
         if (age < 30)
             printf("Basic Plan");
-         else if (age >= 30 && midchitory = 0)
+         else if (age >= 30 && midchitory == 0)
                   printf("Basic Plan");
                else if (age >= 30 && midchitory >=1)
                         printf("Extended Plan");
