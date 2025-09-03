@@ -17,7 +17,10 @@ int main(){
        for (int j=0 ; j < ncount ; j++){
            if(numbers[j]> max){
                 max = numbers[j];
-           }  
+           }
+
+       
+           
        }
        printf("\n%d",max);
     return 0;
