@@ -1,13 +1,21 @@
 #include <stdio.h>
 
 int main(){
-    int numbers[10]={6,5,1,9,8,7,5,65,9,8};
+    int n;
+    
+    printf("Enter The Amount of Numbers to Check: ");
+           scanf("%d",&n);
 
+    int numbers[n];
+       printf("Enter %d Numbers: \n",n);
+       for ( int i=0 ; i < n ; i++){
+            scanf("%d",&numbers[i]);
+       }
     printf("Displaying Odd Numbers Only:\n");
-    for (int i=0 ; i < 10 ; i++)
+    for (int i=0 ; i < n ; i++){
          if(numbers[i] % 2 != 0)
-              printf("%d\n",numbers[i]);
-
+              printf("%d . ",numbers[i]);
+    }
     return 0;
 }
 /*
