@@ -1,26 +1,47 @@
 #include <stdio.h>
 
-int main(){
-        int n; // Number of elements in array 1
-        int nn; // Number of elements in array 2
-        int nnn;  // 
-            printf("Enter the Number of alements in the first array: ");
-                scanf("%d",&n);
+int main() {
+    int n, nn;
 
-            printf("\nEnter the Number of alements in the Second array: ");
-                scanf("%d",&nn);
     
-        int arry1[n];
-        int arry2[nn];
-            
-            printf("Enter You alements in the first array: ");
-            for(int i=0 ; i < n ; i++){
-                scanf("%d",&arry1[i]);
-            }
+    printf("Enter the number of elements in the first array: ");
+    scanf("%d", &n);
 
+    printf("Enter the number of elements in the second array: ");
+    scanf("%d", &nn);
+
+    int arr1[n], arr2[nn], merged[n + nn];
+
+   
+    printf("Enter %d elements for the first array:\n", n);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    
+    printf("Enter %d elements for the second array:\n", nn);
+    for(int i = 0; i < nn; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+ 
+    for(int i = 0; i < n; i++) {
+        merged[i] = arr1[i];  
+    }
+    for(int i = 0; i < nn; i++) {
+        merged[n + i] = arr2[i];
+    }
+
+  
+    printf("Merged array:\n");
+    for(int i = 0; i < n + nn; i++) {
+        printf("%d ", merged[i]);
+    }
+    printf("\n");
 
     return 0;
 }
+
 
 /*
 Challenge 15: Merging Two Paintings
