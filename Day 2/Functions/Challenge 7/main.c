@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-// Function to reverse a string without string.h
+
 char* reverseString(char str[]) {
     int length = 0;
     int start, end;
     char temp;
 
-    // Find length manually
+    
     while (str[length] != '\0') {
         length++;
     }
@@ -14,7 +14,7 @@ char* reverseString(char str[]) {
     start = 0;
     end = length - 1;
 
-    // Swap characters
+   
     while (start < end) {
         temp = str[start];
         str[start] = str[end];
