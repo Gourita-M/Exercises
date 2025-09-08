@@ -5,26 +5,26 @@ struct Rectangle {
     float largeur;
 };
 
-// function to calculate area (takes a structure as argument)
+
 float calculerAire(struct Rectangle r) {
     return r.longueur * r.largeur;
 }
 
 int main() {
-    struct Rectangle rect;   // declare a variable of type Rectangle
+    struct Rectangle rect;
     float aire;
 
-    // ask user input
+   
     printf("Entrer la longueur du rectangle: ");
     scanf("%f", &rect.longueur);
 
     printf("Entrer la largeur du rectangle: ");
     scanf("%f", &rect.largeur);
 
-    // call the function
+    
     aire = calculerAire(rect);
 
-    // print result
+  
     printf("L'aire du rectangle est: %.2f\n", aire);
 
     return 0;
