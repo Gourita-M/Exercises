@@ -19,4 +19,6 @@ int main(){
 Challenge 8: Converting to Lowercase
 Write a C program that reads a string and converts all characters to lowercase. 
 Display the modified string.
+
+We can Use toupper to make them all high
 */
